@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" as="style">
+    <script type="text/javascript" charset="utf-8" src="index.js"></script>
+  </head>
+  <body>
+    <div class="container border">
+      <div  class="title">
+        <h2 class="default-text-color">Create Account</h2>
+      </div>
+
+      <form onsubmit="return false">
+        <div id="nameRow" class="row-inputs">
+          <label class="default-text-color" for="name">Nombre</label>
+          <input class="border" type="text" id="name"/>
+          <p id="nameError" class="errorMessage"></p>
+        </div>
+
+        <div id="emailRow" class="row-inputs">
+          <label class="default-text-color" for="mail">Email</label>
+          <input class="border" type="email" id="mail"/>
+          <p id="mailError" class="errorMessage"></p>
+        </div>
+
+        <div id="passRow" class="row-inputs">
+          <label class="default-text-color" for="pass">Clave</label>
+          <input class="border" type="password" id="pass"/>
+          <p id="passError" class="errorMessage"></p>
+        </div>
+
+        <div id="confirmPassRow" class="row-inputs">
+          <label class="default-text-color" for="confirmPass">Confirme su clave</label>
+          <input class="border" type="password" id="confirmPass"/>
+          <p id="confirmPassError" class="errorMessage"></p>
+        </div>
+
+        <div class="row-button">
+          <button id="sendFormButton" class="border button1" onclick="validate();">ENVIAR</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
